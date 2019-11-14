@@ -1,7 +1,7 @@
 import discord
-import asyncio 
+import asyncio
 
-from discord import commands.ext
+from discord.ext import commands
 
 bot = commands.Bot(command_prefix='?')
 
@@ -10,7 +10,7 @@ async def on_ready():
     print('Logged in as')
     print(bot.user.name)
     print(bot.user.id)
-    print('------')
+    print('------') 
 
 
 bot.run('token')
