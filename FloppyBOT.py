@@ -1,3 +1,4 @@
+#Import Stuff
 import discord
 import asyncio 
 
@@ -5,8 +6,10 @@ from discord.ext import commands
 
 bot = commands.Bot(command_prefix="fp!")
 
+#Remove default help command
 bot.remove_command("help")
 
+#Show that the bot is online
 @bot.event
 async def on_ready():
     print('Logged in as')
